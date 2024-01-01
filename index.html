@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ConnextGen</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sen">
+        <link href="style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div id="navigation" class="navigation sticky">
+            <a class="logo" href="#"><img src="img/logo.png"></a>
+            <div class="buttons">
+                <a href="#about">About Us</a>
+                <a href="#process">Our Process</a>
+                <a href="mailto:connextgenproject@gmail.com">Contact</a>
+                <a class="help" href="#help">Help</a>
+            </div>
+        </div>
+
+        <div class="home">
+            <h1>Learning. Opportunities. Experience.</h1>
+            <p>Providing equitable learning opportunities for high schoolers</p>
+            <br>
+            <img src="img/dots.png">
+        </div>
+
+        <img id="about" class="border" src="img/border.svg">
+
+        <div class="about">
+            <h1>About Us</h1>
+            <p>As high school students, we know what it's like to want to develop our interests. However, the scarcity of accessible learning avenues for high school students outside the classroom makes bridging the gap between interests and hands-on experience more challenging.<br><br>ConnextGen is a 501(c)(3) nonprofit organization committed to providing all high school students the opportunity to explore career paths and gain practical skills working on real-world applications.</p>
+        </div>
+
+        <div id="process" class ="process">
+            <h1>Our Process</h1>
+            <div class="left">
+                <h2>Shadow</h2>
+                <ul>
+                    <li>Students are matched up with an industry mentor based on their interests</li>
+                    <li>They shadow and work under their mentor at their workspace once a week over the course of three months</li>
+                </ul>
+            </div>
+            <div class="right">
+                <h2>Identify</h2>
+                <ul>
+                    <li>Each student will identify a researchable real-world problem related to their shadowed workspace or another field of interest</li>
+                    <li>If a student is having trouble coming up with ideas, they will be provided with some potential options by their mentors</li>
+                </ul>
+            </div>
+            <div class="left">
+                <h2>Develop</h2>
+                <ul>
+                    <li>During and between their shadowing sessions, students will research their chosen problem and develop a project addressing the issue</li>
+                    <li>Their solution can take the form of a prototype, proposal, or comprehensive report</li>
+                    <li>Students will present their final projects to the ConnextGen team and other mentors at the end of the program</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="help" class="help">
+            <h1>Help ConnextGen</h1>
+            <p>Individuals or companies interested in furthering ConnextGen should fill out the form below</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1znrRftbxtVVQRtDC03t6fnKH9o1jaMchdc3U16Xl9sk_Cw/viewform?usp=sf_link" target="_blank">I'm Interested</a>
+        </div>
+
+        <div class="footer">
+            <img src="img/icon.png">
+            <p>©2023 ConnextGen</p>
+        </div>
+
+        <script>
+            window.onscroll = function() { myFunction() };
+            var navigation = document.getElementById("navigation");
+            var sticky = navigation.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navigation.classList.add("sticky")
+                } else {
+                    navigation.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>

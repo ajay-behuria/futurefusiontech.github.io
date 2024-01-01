@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+
+@font-face {
+    font-family: Avenir Regular;
+    src: url(fonts/AvenirRegular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.navigation {
+    overflow: hidden;
+    border-top: 5px solid #001b2e;
+    background-color: white;
+    z-index: 1;
+}
+
+.logo img {
+    margin: 10px 100px;
+    height: 75px;
+}
+
+.buttons {
+    position: sticky;
+    top: 0;
+    padding: 35px 200px 25px;
+    float: right;
+}
+
+.buttons a {
+    padding: 15px;
+    font-family: "Avenir Regular";
+    font-size: 20px;
+    color: #294c60;
+    text-decoration: none;
+    border-radius: 0px;
+}
+
+.buttons a.help {
+    padding: 8px 15px;
+    border: 1px solid #294c60;
+    border-radius: 3px;
+    margin-left: 15px;
+}
+
+.buttons a:hover {
+    color: #001b2e;
+    border-bottom: 1px solid #001b2e;
+    box-shadow: 0 1px 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+.sticky + .home {
+    padding-top: 250px;
+}
+
+.home {
+    text-align: center;
+    padding: 150px 150px 100px;
+    background-color: #f5f6fd;
+}
+
+.home h1 {
+    font-family: "Bodoni Moda", serif;
+    font-size: 60px;
+    color: #294c60;
+}
+
+.home p {
+    margin: 30px 30px 60px;
+    font-family: "Avenir Regular";
+    font-size: 35px;
+}
+
+.home img {
+    height: 20px;
+}
+
+.border {
+    margin-bottom: -5px;
+    display: block;
+    overflow: hidden;
+    scroll-margin-top: 120px;
+}
+
+.border::before {
+    background-color: linear-gradient(180deg, #f5f6fd 50%, #294c60 50%);
+}
+
+.about {
+    padding: 50px 300px 175px;
+    background-color: #294c60;
+    overflow: auto;
+}
+
+.about h1 {
+    padding-bottom: 50px;
+    float: left;
+    font-family: "Bodoni Moda", serif;
+    font-size: 50px;
+    color: #e1f2fe;
+    display: inline;
+}
+
+.about h1::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #e1f2fe;
+    width: 40%;
+    margin: 40px 0 auto;
+    transform: translateX(70%);
+}
+
+.about p {
+    float: right;
+    width: 60%;
+    font-family: "Avenir Regular";
+    font-size: 24px;
+    color: #e1f2fe;
+}
+
+.process {
+    padding: 150px;
+    background-color: #a9d9ef;
+    display: flex;
+    flex-direction: column;
+}
+
+.process h1 {
+    font-family: "Bodoni Moda", serif;
+    font-size: 60px;
+    color: #001b2e;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.process h1::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #001b2e;
+    width: 10%;
+    margin: 40px 0 auto;
+    transform: translateX(455%);
+}
+
+.process .left {
+    align-self: flex-start;
+    width: 50%;
+    padding: 30px 50px;
+    margin: 30px 150px;
+    background-color: #e1f2fe;
+}
+
+.process .right {
+    align-self: flex-end;
+    width: 50%;
+    padding: 30px 50px;
+    margin: 30px 150px;
+    background-color: #e1f2fe;
+}
+
+.process > div h2 {
+    font-family: "Bodoni Moda", serif;
+    font-size: 30px;
+    color: #294c60;
+}
+
+.process > div li {
+    font-family: "Avenir Regular";
+    font-size: 18px;
+    color: #294c60;
+}
+
+.help {
+    text-align: center;
+    padding: 150px;
+    background-color: #f5f6fd;
+}
+
+.help h1 {
+    font-family: "Bodoni Moda", serif;
+    font-size: 50px;
+    color: #294c60;
+}
+
+.help p {
+    margin-bottom: 80px;
+    font-family: "Avenir Regular";
+    font-size: 24px;
+}
+
+.help a {
+    padding: 10px 20px;
+    font-family: "Avenir Regular";
+    font-size: 24px;
+    color: #f5f6fd;
+    background-color: #294c60;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.help a:hover {
+    background-color: #335d7a;
+}
+
+.footer {
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: #001b2e;
+}
+
+.footer img {
+    margin-top: 80px;
+    width: 100px;
+}
+
+.footer p {
+    font-family: "Avenir Regular";
+    font-size: 18px;
+    color:#e1f2fe
+}
+
+@media (max-width: 1400px) {
+    .logo img {
+        margin: 10px 20px;
+        height: 70px;
+    }
+
+    .buttons {
+        padding: 35px 20px 5px;
+    }
+
+    .buttons a {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .sticky + .home {
+        padding-top: 220px;
+    }
+
+    .home {
+        padding: 120px 30px 30px;
+    }
+
+    .home h1 {
+        font-size: 50px;
+    }
+
+    .home p {
+        font-size: 30px;
+    }
+
+    .about {
+        padding: 70px 100px 150px;
+    }
+
+    .about h1 {
+        font-size: 40px;
+    }
+
+    .about p {
+        font-size: 20px;
+        width: 65%;
+        margin: 0;
+    }
+
+    .process {
+        padding: 100px;
+    }
+
+    .process h1 {
+        font-size: 50px;
+        padding-bottom: 30px;
+    }
+
+    .process .left {
+        margin: 30px 50px;
+    }
+
+    .process .right {
+        margin: 30px 50px;
+    }
+
+    .help {
+        padding: 100px 100px 120px;
+    }
+
+    .help h1 {
+        font-size: 40px;
+    }
+
+    .help p {
+        margin-bottom: 60px;
+    }
+
+    .footer img {
+        margin-top: 40px;
+        width: 80px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo img {
+        margin: 10px 15px;
+        height: 50px;
+    }
+
+    .buttons {
+        padding: 25px 20px 5px;
+    }
+
+    .buttons a {
+        display: none;
+    }
+
+    .buttons a.help {
+        display: inline;
+        padding: 10px 15x;
+        font-size: 14px;
+    }
+
+    .sticky + .home {
+        padding-top: 150px;
+    }
+    
+    .home {
+        padding: 80px 30px 30px;
+    }
+    
+    .home h1 {
+        font-size: 40px;
+    }
+    
+    .home p {
+        margin: 70px 30px 80px;
+        font-size: 22px;
+    }
+    
+    .home img {
+        height: 20px;
+        margin-bottom: 60px;
+    }
+
+    .about {
+        padding: 70px 20px 50px;
+    }
+
+    .about h1 {
+        font-size: 32px;
+    }
+
+    .about p {
+        font-size: 20px;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
+    .process {
+        padding: 40px;
+        display: block;
+    }
+
+    .process h1 {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+    .process h1::after {
+        border-bottom: 3px solid #001b2e;
+        width: 20%;
+        transform: translateX(200%);
+    }
+
+    .process .left {
+        width: 80%;
+        padding: 30px 30px 30px 15px;
+        margin: 30px 10px;
+    }
+
+    .process .right {
+        width: 80%;
+        padding: 30px 30px 30px 15px;
+        margin: 30px 10px;
+    }
+
+    .process > div h2 {
+        text-align: center;
+        font-size: 24px;
+        transform: translateX(5px);
+    }
+
+    .process > div li {
+        font-size: 14px;
+    }
+
+    .help {
+        padding: 40px 20px 80px;
+    }
+
+    .help h1 {
+        font-size: 32px;
+    }
+
+    .help p {
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+
+    .help a {
+        margin: 15px;
+        font-size: 18px;
+    }
+
+    .footer {
+        padding-bottom: 10px;
+    }
+
+    .footer img {
+        margin-top: 20px;
+        padding-bottom: 10px;
+        width: 60px;
+    }
+
+    .footer p {
+        margin-top: 0;
+        font-size: 16px;
+    }
+}
