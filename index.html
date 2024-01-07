@@ -1,87 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Future Fusion Technologies</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sen">
-        <link href="style.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+<html>
+  <head>
+    <style>
+      .container {
+        position: relative;
+      }
+      
+      .topleft {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-size: 18px;
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Future Fusion Technologies LLC</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-    <body>
-        <div id="navigation" class="navigation sticky">
-            <a class="logo" href="#"><img src="img/logo.png"></a>
-            <div class="buttons">
-                <a href="#about">About Us</a>
-                <a href="#process">Our Process</a>
-                <a href="mailto:connextgenproject@gmail.com">Contact</a>
-                <a class="help" href="#help">Help</a>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#welcome-section">
+          <img src="ai_logo.png" alt="Logo" width="1000" height="1000">
+        </a>
+        <div class="nav-links">
+          <a href="#about-section">ABOUT</a>
+          <a href="#projects-section">PROJECTS</a>
+          <a href="#who-we-are-section">WHO WE ARE</a>
+          <a href="#email-list-signup-section">SIGNUP</a>
+          <a href="#contact-section">CONTACT</a>
+        </div>
+      </nav>
+      
+    <!-- Welcome Image and Text -->
+    <section class="welcome-section" id="welcome-section">
+        <div class="welcome-text">
+          <h1>Future Fusion Technologies</h1>
+          <p>At Future Fusion Technologies, our purpose is to transcend conventional boundaries and catalyze a seismic shift in the technological landscape. We envision a future where innovation converges seamlessly with human needs. With unwavering passion, we forge cutting-edge solutions, fusing creativity and technology to empower businesses and individuals alike. Our mission is to ignite a transformative journey, propelling our clients into a future where possibilities are limitless, and technology becomes an intimate ally in achieving unparalleled success. Welcome to a future shaped by the fusion of vision and innovation – Welcome to Future Fusion Technologies.</p>
+          <i class="fas fa-arrow-right arrow-icon"></i>
+        </div>
+        <div class="generated-text">
+          <p>Embark on a transformative odyssey at Future Fusion Technologies, where innovation intertwines with emotion, shaping a digital frontier beyond imagination!</p>
+          <div>
+            <a href="#about-section">Continue reading  <i class="fas fa-arrow-right arrow-icon2"></i></a>
+          </div>
+        </div>
+      </section>
+       <!-- About Section -->
+       <section class="about-section" id="about-section">
+        <div>
+          <h2>About</h2>
+          <p>Welcome to Future Fusion Technologies, where our innovation transcends boundaries, weaving dreams into reality. Rooted in a passion for technological excellence, we redefine possibilities. Empathetic and bold, we craft solutions that resonate with human aspirations. In every line of code, we envision a future where fusion sparks transformation. Join us on this journey, where technology meets emotion, and together, we shape a future beyond imagination. Unleash the power of fusion at Future Fusion Technologies.</p>
+        </div>
+      </section>
+      <!-- Projects Section -->
+      <section class="projects-section" id="projects-section">
+        <div>
+          <h2>Projects</h2>
+          <p></p>
+        </div>
+        <div class="slider-container">
+            <div class="slider-frame">
+              <img src="background_brain.png" alt="Image 1">
+            </div>
+            <div class="slider-content">
+              <h2>Image 1 Title</h2>
+              <p>Image 1 Description</p>
             </div>
         </div>
-
-        <div class="home">
-            <h1>Learning. Opportunities. Experience.</h1>
-            <p>Providing equitable learning opportunities for high schoolers</p>
-            <br>
-            <img src="img/dots.png">
+        <div>
+            <i class="fa fa-chevron-left arrow-left"></i>
+            <i class="fa fa-chevron-right arrow-right"></i>
         </div>
-
-        <img id="about" class="border" src="img/border.svg">
-
-        <div class="about">
-            <h1>About Us</h1>
-            <p>As high school students, we know what it's like to want to develop our interests. However, the scarcity of accessible learning avenues for high school students outside the classroom makes bridging the gap between interests and hands-on experience more challenging.<br><br>ConnextGen is a 501(c)(3) nonprofit organization committed to providing all high school students the opportunity to explore career paths and gain practical skills working on real-world applications.</p>
+      </section>
+      <!-- Who We Are Section -->
+      <section class="who-we-are-section" id="who-we-are-section">
+        <div>
+          <h2>Who We Are</h2>
+          <p>United by a passion for innovation, our team at Future Fusion Technologies draws strength from collective experiences. Each journey, a story of resilience, creativity, and unwavering determination. Our shared commitment fuels the spark that propels us to craft a future where possibilities are boundless. Together, we're not just a team; we're architects of dreams, shaping the digital landscape with a spirit that refuses to settle for ordinary. We believe that with our combined expertise in AI and design, we can offer a truly unique and efficient service to our clients. Our passion for innovation and drive to stay ahead of the curve has allowed us to create a seamless web design process that is both efficient and effective. So why wait? Let's work together to bring your vision to life.</p>
         </div>
+      </section>
+      <!-- Email List Signup Section -->
+      <section class="email-list-signup-section" id="email-list-signup-section">
+        <div>
+          <h2>Join Our Email List</h2>
+          <p>Stay up to date on the latest AI web design trends and receive exclusive offers. Sign up for our email list today!</p>
+         <form id="signup-form">
+            <input type="email" name="email" placeholder="Your Email" id="email">
+            <button type="submit">Sign Up</button>
+          </form>
+          <div id="signup-success" style="display: none;">
+            <p>Sign up successful!</p>
+          </div>
 
-        <div id="process" class ="process">
-            <h1>Our Process</h1>
-            <div class="left">
-                <h2>Shadow</h2>
-                <ul>
-                    <li>Students are matched up with an industry mentor based on their interests</li>
-                    <li>They shadow and work under their mentor at their workspace once a week over the course of three months</li>
-                </ul>
-            </div>
-            <div class="right">
-                <h2>Identify</h2>
-                <ul>
-                    <li>Each student will identify a researchable real-world problem related to their shadowed workspace or another field of interest</li>
-                    <li>If a student is having trouble coming up with ideas, they will be provided with some potential options by their mentors</li>
-                </ul>
-            </div>
-            <div class="left">
-                <h2>Develop</h2>
-                <ul>
-                    <li>During and between their shadowing sessions, students will research their chosen problem and develop a project addressing the issue</li>
-                    <li>Their solution can take the form of a prototype, proposal, or comprehensive report</li>
-                    <li>Students will present their final projects to the ConnextGen team and other mentors at the end of the program</li>
-                </ul>
-            </div>
+          
         </div>
-        
-        <div id="help" class="help">
-            <h1>Help ConnextGen</h1>
-            <p>Individuals or companies interested in furthering ConnextGen should fill out the form below</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1znrRftbxtVVQRtDC03t6fnKH9o1jaMchdc3U16Xl9sk_Cw/viewform?usp=sf_link" target="_blank">I'm Interested</a>
+      </section>
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact-section">
+        <div>
+          <h2>Get in touch with us!</h2>
+          <div class="contact-section">
+            <button class="btn gmail"><i class="fas fa-envelope"></i></button>
+            <button class="btn twitter"><i class="fab fa-twitter"></i></button>
+            <button class="btn instagram"><i class="fab fa-instagram"></i></button>
+          </div>
+          
+          
         </div>
-
-        <div class="footer">
-            <img src="img/icon.png">
-            <p>©2023 ConnextGen</p>
-        </div>
-
-        <script>
-            window.onscroll = function() { myFunction() };
-            var navigation = document.getElementById("navigation");
-            var sticky = navigation.offsetTop;
-
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navigation.classList.add("sticky")
-                } else {
-                    navigation.classList.remove("sticky");
-                }
-            }
-        </script>
+      </section>
+      <footer>
+        <p class="copyright">Copyright Future Fusion Technologies LLC 2024</p>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="script.js"></script>
     </body>
-</html>
+  </html>
+  
